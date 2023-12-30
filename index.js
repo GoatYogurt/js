@@ -3,3 +3,7 @@ function greet() {
 }
 
 greet();
+
+console.groupEnd();
+
+greet();
