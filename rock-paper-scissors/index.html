@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Rock, Paper, Scissors</h1>
+    <p>
+        <button onclick="
+            computerMove = randomMove();
+            playerMove = 'rock';
+            showResult(playerMove, computerMove);
+        ">Rock</button>
+        <button onclick="
+            computerMove = randomMove();
+            playerMove = 'paper';
+            showResult(playerMove, computerMove);
+        ">Paper</button>
+        <button onclick="
+            computerMove = randomMove();
+            playerMove = 'scissors';
+            showResult(playerMove, computerMove);
+        ">Scissors</button>
+    </p>
+    <script src="index.js"></script>
+</body>
+
+</html>
