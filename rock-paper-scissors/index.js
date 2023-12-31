@@ -37,17 +37,17 @@ function compare(player, computer) {
 function showResult(player, computer) {
     result = compare(player, computer);
     if (result === 'player') {
-        alert(`You win! You chose ${player} and the computer chose ${computer}. Current score: ${win} wins, ${ties} ties, ${lose} losses.`);
+        alert(`You win! You: ${player} - computer: ${computer}. Current score: ${win} wins, ${ties} ties, ${lose} losses.`);
         return;
     }
 
     if (result === 'computer') {
-        alert(`You lose! You chose ${player} and the computer chose ${computer}. Current score: ${win} wins, ${ties} ties, ${lose} losses.`);
+        alert(`You lose! You: ${player} - computer: ${computer}. Current score: ${win} wins, ${ties} ties, ${lose} losses.`);
         return;
     }
 
     if (result === 'draw') {
-        alert(`It's a draw! You chose ${player} and the computer chose ${computer}. Current score: ${win} wins, ${ties} ties, ${lose} losses.`);
+        alert(`It's a draw! You: ${player} - computer: ${computer}. Current score: ${win} wins, ${ties} ties, ${lose} losses.`);
         return;
     }
 }

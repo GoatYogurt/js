@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Your cart</h1>
+    <button onclick="
+        console.log('Current quantity: '+ cartQuantity);
+    ">Show quantity</button>
+
+    <p>
+        <button onclick="
+            cartQuantity === 10 ? console.log('Cart is full!') : cartQuantity++;
+            console.log('Current quantity: '+ cartQuantity);
+        ">+1</button>
+
+        <button onclick="
+            cartQuantity > 8 ? console.log('Cart is full!') : cartQuantity += 2;
+            console.log('Current quantity: '+ cartQuantity);
+        ">+2</button>
+
+        <button onclick="
+            cartQuantity > 7 ? console.log('Cart is full!') : cartQuantity += 3;
+            console.log('Current quantity: '+ cartQuantity);
+        ">+3</button>
+    </p>
+
+    <p>
+        <button onclick="
+            cartQuantity < 1 ? console.log('Not enough items in cart!') : cartQuantity--;
+            console.log('Current quantity: '+ cartQuantity);
+        ">-1</button>
+        <button onclick="
+            cartQuantity < 2 ? console.log('Not enough items in cart!') : cartQuantity -= 2;
+            console.log('Current quantity: '+ cartQuantity);
+        ">-2</button>
+        <button onclick="
+            cartQuantity < 3 ? console.log('Not enough items in cart!') : cartQuantity -= 3;
+            console.log('Current quantity: '+ cartQuantity);
+        ">-3</button>
+    </p>
+
+    <p>
+        <button onclick="
+        cartQuantity = 0;
+            console.log('Current quantity: '+ cartQuantity);   
+        ">Clear cart</button>
+    </p>
+
+    <script>
+        let cartQuantity = 0;
+    </script>
+</body>
+
+</html>
