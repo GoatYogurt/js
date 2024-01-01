@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Calculator</title>
 </head>
 
 <body>
@@ -62,25 +62,27 @@
         ">-</button>
 
         <button onclick="
-            console.log(calculation + '=' + eval(calculation));
+            console.log(calculation.value + '=' + eval(calculation.value));
         ">=</button>
 
         <button onclick="
-            currentOperation = undefined;
-            a = 0;
-            b = 0;
-            calculation = '';
+            localStorage.removeItem('calculation');
             console.log('Cleared');
         ">Clear</button>
     </p>
 
     <script>
-        let a = undefined;
-        let b = undefined;
-        let calculation = '';
+        let calculation = JSON.parse(localStorage.getItem('calculation')) || { 
+            value: '' 
+        };
+        console.log('First log: '+ calculation);
 
         function update(char) {
-            calculation += char;
+
+            calculation.value += char;
+
+            console.log('Second log: ' + calculation);
+            localStorage.setItem('calculation', JSON.stringify(calculation));
         }
     </script>
 </body>
