@@ -1,5 +1,12 @@
-function greet(name = undefined) {
-    console.log('Hello ' + name + '!');
-}
+const message = 'Hi!';
 
-greet('Quan');
+const object = {
+    message,
+    
+    method() {
+        console.log('method');
+    }
+};
+
+console.log(object.message);
+object.method();
