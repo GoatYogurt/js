@@ -15,32 +15,32 @@
 
     <p>
         <button onclick="
-            cartQuantity === 10 ? console.log('Cart is full!') : cartQuantity++;
+            update('+', 1);
             console.log('Current quantity: '+ cartQuantity);
         ">+1</button>
 
         <button onclick="
-            cartQuantity > 8 ? console.log('Cart is full!') : cartQuantity += 2;
+            update('+', 2);
             console.log('Current quantity: '+ cartQuantity);
         ">+2</button>
 
         <button onclick="
-            cartQuantity > 7 ? console.log('Cart is full!') : cartQuantity += 3;
+            update('+', 3);
             console.log('Current quantity: '+ cartQuantity);
         ">+3</button>
     </p>
 
     <p>
         <button onclick="
-            cartQuantity < 1 ? console.log('Not enough items in cart!') : cartQuantity--;
+            update('-', 1);
             console.log('Current quantity: '+ cartQuantity);
         ">-1</button>
         <button onclick="
-            cartQuantity < 2 ? console.log('Not enough items in cart!') : cartQuantity -= 2;
+            update('-', 2);
             console.log('Current quantity: '+ cartQuantity);
         ">-2</button>
         <button onclick="
-            cartQuantity < 3 ? console.log('Not enough items in cart!') : cartQuantity -= 3;
+            update('-', 3);
             console.log('Current quantity: '+ cartQuantity);
         ">-3</button>
     </p>
@@ -54,6 +54,19 @@
 
     <script>
         let cartQuantity = 0;
+
+        function update(op, num) {
+            let previousQuantity = cartQuantity;
+            cartQuantity = eval(cartQuantity + op + num);
+
+            if (cartQuantity < 0) {
+                console.log('Not enough items in cart!');
+                cartQuantity = previousQuantity;
+            } else if (cartQuantity > 10) {
+                console.log('Not enough space in cart!')
+                cartQuantity = previousQuantity;
+            }
+        }
     </script>
 </body>
 

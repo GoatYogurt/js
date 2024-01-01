@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -13,123 +12,77 @@
 
     <p>
         <button onclick="
-        if (currentOperation === undefined) {
-            a = 1;
-            calculation += a;
-        } else {
-            b = 1;
-            calculation += currentOperation + b;
-        }
-    ">1</button>
+            update(1);
+        ">1</button>
 
         <button onclick="
-        if (currentOperation === undefined) {
-            a = 2;
-            calculation += a;
-        } else {
-            b = 2;
-            calculation += currentOperation + b;
-        }
-    ">2</button>
+            update(2);
+        ">2</button>
 
         <button onclick="
-        if (currentOperation === undefined) {
-            a = 3;
-            calculation += a;
-        } else {
-            b = 3;
-            calculation += currentOperation + b;
-        }
-    ">3</button>
+            update(3);
+        ">3</button>
     </p>
 
     <p>
         <button onclick="
-        if (currentOperation === undefined) {
-            a = 4;
-            calculation += a;
-        } else {
-            b = 4;
-            calculation += currentOperation + b;
-        }
-    ">4</button>
+            update(4);
+        ">4</button>
 
         <button onclick="
-        if (currentOperation === undefined) {
-            a = 5;
-            calculation += a;
-        } else {
-            b = 5;
-            calculation += currentOperation + b;
-        }
-    ">5</button>
+            update(5);
+        ">5</button>
 
         <button onclick="
-        if (currentOperation === undefined) {
-            a = 6;
-            calculation += a;
-        } else {
-            b = 6;
-            calculation += currentOperation + b;
-        }
-    ">6</button>
+            update(6);
+        ">6</button>
     </p>
 
     <p>
         <button onclick="
-        if (currentOperation === undefined) {
-            a = 7;
-            calculation += a;
-        } else {
-            b = 7;
-            calculation += currentOperation + b;
-        }
-    ">7</button>
+            update(7);
+        ">7</button>
 
         <button onclick="
-        if (currentOperation === undefined) {
-            a = 8;
-            calculation += a;
-        } else {
-            b = 8;
-            calculation += currentOperation + b;
-        }
-    ">8</button>
+            update(8);
+        ">8</button>
 
         <button onclick="
-        if (currentOperation === undefined) {
-            a = 9;
-            calculation += a;
-        } else {
-            b = 9;
-            calculation += currentOperation + b;
-        }
-    ">9</button>
+            update(9);
+        ">9</button>
     </p>
 
     <p>
         <button onclick="
-        currentOperation = '+';
-    ">+</button>
+            update('+')
+        ">+</button>
 
-    <button onclick="
-        currentOperation = '-';
-    ">-</button>
+        <button onclick="
+            update('-')
+        ">-</button>
 
-    <button onclick="
-        console.log(calculation + '=' + eval(calculation));
-    ">=</button>
+        <button onclick="
+            console.log(calculation + '=' + eval(calculation));
+        ">=</button>
 
-    <button onclick="
-        currentOperation = undefined;
-        a = 0;
-        b = 0;
-        calculation = '';
-        console.log('Cleared');
-    ">Clear</button>
+        <button onclick="
+            currentOperation = undefined;
+            a = 0;
+            b = 0;
+            calculation = '';
+            console.log('Cleared');
+        ">Clear</button>
     </p>
 
-    <script src="index.js"></script>
+    <script>
+        let a = undefined;
+        let b = undefined;
+        let calculation = '';
+
+        function update(char) {
+            calculation += char;
+        }
+    </script>
 </body>
 
 </html>
