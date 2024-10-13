@@ -1,0 +1,43 @@
+body {
+  width: 100%;
+  max-width: 500px;
+  background-color: #0dbe60;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+  width: 100%;
+  height: auto;
+  background-color: #eeeeee;
+  padding: 20px;
+  box-shadow: 1px 1px 5px;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
+}
+
+.input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.name-input, .age-input, .email-input {
+  height: 30px;
+}
+
+span {
+  font-size: x-small;
+}
+
+#submit-button {
+  background-color: #00adb5;
+  width: 90%;
+  margin-top: 20px;
+}
+
+#submit-button:hover {
+  cursor: pointer;
+}

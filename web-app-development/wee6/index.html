@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <label for="name">Name</label>
+            <div class="center input">
+                <input class="name-input" type="text" placeholder="Enter your name" style="width: 90%" />
+            </div>
+
+            <label for="email">Email</label>
+            <div class="center input">
+                <input class="email-input" type="email" placeholder="Enter your email" style="width: 90%" />
+            </div>
+
+            <label for="age">Age</label>
+            <div class="center input">
+                <input class="age-input" type="number" placeholder="Enter your age" style="width: 90%" />
+            </div>
+
+            <label for="">Which option best describes you?</label>
+            <div class="center input">
+                <select style="width: 90%">
+                    <option>El Camino's fan</option>
+                    <option>Better Call Saul's fan</option>
+                    <option>Breaking Bad's fan</option>
+                    <option>The entire Breaking Bad universe's fan</option>
+                </select>
+            </div>
+
+            <div class="input"><label for="">Would you recommend Breaking Bad to a friend?</label> <br>
+                <input type="radio" name="recommendation" />Yes! <br />
+                <input type="radio" name="recommendation" />Absolutely! <br />
+                <input type="radio" name="recommendation" />Hell yeah!! <br />
+            </div>
+
+            <label for="">Choose all the characters that you like <span>(Check all that apply)</span></label> <br>
+            <div class="input"><input type="checkbox" />Walter White <br />
+                <input type="checkbox" />Jesse Pinkman <br />
+                <input type="checkbox" />Jimmy "Saul Goodman" McGill<br />
+                <input type="checkbox" />Gustavo Fring <br />
+                <input type="checkbox" />Hank Shrader <br />
+                <input type="checkbox" />Micheal Ehrmantraut <br />
+            </div>
+
+
+            <label for="">Any comments or suggestions?</label>
+            <div class="center input">
+                <textarea class="suggestion-input" rows="2" cols="50"> </textarea><br />
+            </div>
+
+            <div class="center input"><input type="submit" id="submit-button" /></div>
+        </form>
+    </div>
+</body>
+
+</html>
