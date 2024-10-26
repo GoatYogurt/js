@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="check-all-box"></th>
+                <th>Họ và tên</th>
+                <th>Ngày sinh</th>
+                <th>Giới tính</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr id="first-row">
+                <td><input type="checkbox" id="check-box-1" onchange="checkedRow(1)"></td>
+                <td onclick="checkBox(1)">Hoàng Văn A</td>
+                <td onclick="checkBox(1)">2/2/2002</td>
+                <td onclick="checkBox(1)">Nam</td>
+            </tr>
+
+            <tr id="second-row">
+                <td><input type="checkbox" id="check-box-2" onchange="checkedRow(2)"></td>
+                <td onclick="checkBox(2)">Trần Thị B</td>
+                <td onclick="checkBox(2)">1/1/2001</td>
+                <td onclick="checkBox(2)">Nữ</td>
+            </tr>
+
+            <tr id="third-row">
+                <td><input type="checkbox" id="check-box-3" onchange="checkedRow(3)"></td>
+                <td onclick="checkBox(3)">Đào Xuân C</td>
+                <td onclick="checkBox(3)">3/3/2003</td>
+                <td onclick="checkBox(3)">Nam</td>
+            </tr>
+
+            <tr id="fourth-row">
+                <td><input type="checkbox" id="check-box-4" onchange="checkedRow(4)"></td>
+                <td onclick="checkBox(4)">Tống Minh D</td>
+                <td onclick="checkBox(4)">1/1/2002</td>
+                <td onclick="checkBox(4)">Nam</td>
+            </tr>
+
+            <tr id="fifth-row">
+                <td><input type="checkbox" id="check-box-5" onchange="checkedRow(5)"></td>
+                <td onclick="checkBox(5)">Nguyễn Trà E</td>
+                <td onclick="checkBox(5)">3/6/2002</td>
+                <td onclick="checkBox(5)">Nữ</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="scripts.js"></script>
+
+</html>

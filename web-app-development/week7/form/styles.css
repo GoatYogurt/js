@@ -1,0 +1,45 @@
+body {
+    max-width: 900px;
+}
+
+form {
+    display: table;
+}
+
+.input-container {
+    display: table-row;
+}
+
+label,
+input,
+span {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    width: 250px;
+}
+
+span {
+    text-align: center;
+    color: red;
+}
+
+label {
+    padding-right: 20px;
+}
+
+textarea {
+    max-width: 250px;
+}
+
+.required {
+    background-color: aqua;
+}
+
+#dob-input {
+    color: gray;
+}

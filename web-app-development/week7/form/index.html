@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form>
+        <div class="input-container">
+            <label for="name" id="name-label">Họ và tên:</label>
+            <input type="text" class="required" id="name-input" onkeydown="moveToAddress(event)" autofocus>
+            <span id="name-blank"></span>
+        </div>
+
+        <div class="input-container">
+            <label for="address" id="address-label">Địa chỉ:</label>
+            <input type="text" name="" id="address-input" onkeydown="moveToDOB(event)">
+        </div>
+
+        <div class="input-container">
+            <label for="address">Giới tính:</label>
+            <input type="radio" name="gender" id="male-radio-option">Nam
+            <input type="radio" name="gender" id="female-radio-option">Nữ
+            <span id="gender-blank"></span>
+        </div>
+
+        <div class="input-container">
+            <label for="dob">Ngày sinh:</label>
+            <input type="text" class="required" id="dob-input" placeholder="dd/mm/yyyy" onkeydown="moveToEmail(event)">
+            <span id="dob-blank"></span>
+        </div>
+
+        <div class="input-container">
+            <label for="email">E-mail:</label>
+            <input type="email" class="required" id="email-input" onkeydown="moveToTel(event)">
+            <span id="invalid-email"></span>
+        </div>
+
+        <div class="input-container">
+            <label for="phone-number">Điện thoại:</label>
+            <input type="tel" name="" id="tel-input" onkeydown="moveToUsername(event)">
+        </div>
+
+        <div class="input-container">
+            <label for="">Khóa đăng ký:</label>
+            <input type="checkbox" id="checkbox-option-1">Tiếng Anh
+            <input type="checkbox" id="checkbox-option-2">Quản trị
+            <input type="checkbox" id="checkbox-option-3">CNTT
+            <span id="courses-blank"></span>
+        </div>
+
+        <div class="input-container">
+            <label for="">Tên sử dụng:</label>
+            <input type="text" class="required" id="username-input" onkeydown="moveToPassword(event)">
+            <span id="username-blank"></span>
+        </div>
+
+        <div class="input-container">
+            <label for="">Mật khẩu:</label>
+            <input type="password" id="password-input" onkeydown="moveToRepassword(event)">
+        </div>
+
+        <div class="input-container">
+            <label for="">Gõ lại mật khẩu:</label>
+            <input type="password" id="repassword-input" onkeydown="moveToNote(event)">
+            <span id="unmatch-password"></span>
+        </div>
+
+        <div class="input-container">
+            <label>Ghi chú:</label>
+            <textarea name="" id="note-input"></textarea>
+        </div>
+
+        <div class="input-container">
+            <label for="">Ảnh chân dung:</label>
+            <input type="file">
+        </div>
+
+        <div class="input-container">
+            <label for=""></label>
+            <input type="submit" id="accept" value="Chấp nhận">
+            <input type="submit" value="Bỏ qua">
+        </div>
+    </form>
+    <script src="scripts.js">
+    </script>
+</body>
+
+</html>

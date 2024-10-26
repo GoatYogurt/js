@@ -1,0 +1,42 @@
+body {
+    width: 400px;
+    height: 200px;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: palevioletred;
+}
+
+th,
+td {
+    border: 1px solid black;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+#first-row,
+#third-row,
+#fifth-row {
+    background-color: lightgray;
+}
+
+#second-row,
+#fourth-row {
+    background-color: aliceblue;
+}
+
+#first-row:hover,
+#third-row:hover,
+#fifth-row:hover,
+#second-row:hover,
+#fourth-row:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
