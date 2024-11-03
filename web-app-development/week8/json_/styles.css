@@ -1,0 +1,15 @@
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  
+  th {
+    background-color: lightgray;
+  }
+  
+  th,
+  tr,
+  td {
+    border: 1px solid;
+  }
+  

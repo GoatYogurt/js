@@ -10,27 +10,31 @@
 </head>
 
 <body>
-    <div class="calculator">
-        <div class="inputbox">399.981</div>
-        <div class="buttonbox">
-            <button class="one">1</button>
-            <button class="two">2</button>
-            <button class="three">3</button>
-            <button class="del">DEL</button>
-            <button class="four">4</button>
-            <button class="five">5</button>
-            <button class="six">6</button>
-            <button class="seven">7</button>
-            <button class="eight">8</button>
-            <button class="nine">9</button>
-            <button class="zero">0</button>
-            <button class="dot">.</button>
-            <button class="divide">/</button>
-            <button class="plus">+</button>
-            <button class="minus">-</button>
-            <button class="equal">=</button>
-            <button class="reset">RESET</button>
-            <button class="multiply">x</button>
+    <div class="calculator-container">
+        <div class="screen-container">
+            <div id="screen">0</div>
+        </div>
+        <div class="button-container">
+            <button class="number-button" id="one" onclick="update('1')">1</button>
+            <button class="number-button" id="two" onclick="update('2')">2</button>
+            <button class="number-button" id="three" onclick="update('3')">3</button>
+            <button class="number-button" id="four" onclick="update('4')">4</button>
+            <button class="number-button" id="five" onclick="update('5')">5</button>
+            <button class="number-button" id="six" onclick="update('6')">6</button>
+            <button class="number-button" id="seven" onclick="update('7')">7</button>
+            <button class="number-button" id="eight" onclick="update('8')">8</button>
+            <button class="number-button" id="nine" onclick="update('9')">9</button>
+            <button class="number-button" id="zero" onclick="update('0')">0</button>
+            <button class="operator-button" id="divide" onclick="update('/')">/</button>
+            <button class="operator-button" id="plus" onclick="update('+')">+</button>
+            <button class="operator-button" id="minus" onclick="update('-')">-</button>
+            <button class="operator-button" id="multiply" onclick="update('*')">x</button>
+            <button class="operator-button" id="percentage" onclick="update('%')">%</button>
+            <button class="operator-button" id="negative" onclick="opposite()">+/-</button>
+            <button class="operator-button" id="dot" onclick="update('.')">.</button>
+            <button class="" id="equal" onclick="calculate()">=</button>
+            <button class="function-button" id="clear" onclick="clear_()">C</button>
+            <button class="function-button" id="clear-entry" onclick="clearEntry()">CE</button>
         </div>
     </div>
     <script src="scripts.js"></script>

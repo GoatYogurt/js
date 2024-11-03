@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table class="sortable" id="table_">
+        <thead>
+            <th>TT</th>
+            <th class="sortcol" onclick="sortTable('product-id', 1, document.getElementById('product-id').innerHTML)">
+                Mã sản phẩm
+                <span id="product-id">⭥</span>
+            </th>
+            <th class="sortcol"
+                onclick="sortTable('product-name', 2, document.getElementById('product-name').innerHTML)">Tên sản phẩm
+                <span id="product-name">⭥</span></th>
+            <th class="sortcol"
+                onclick="sortTable('product-origin', 3, document.getElementById('product-origin').innerHTML)">Xuất xứ
+                <span id="product-origin">⭥</span>
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>SP001</td>
+                <td>Máy giặt</td>
+                <td>Nhật Bản</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>SP002</td>
+                <td>Bếp đa năng</td>
+                <td>Hàn Quốc</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>SP003</td>
+                <td>Lò sưởi</td>
+                <td>Mỹ</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>SP004</td>
+                <td>Điều hòa nhiệt độ</td>
+                <td>Việt Nam</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>SP005</td>
+                <td>Tủ lạnh</td>
+                <td>Nhật Bản</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="scripts.js"></script>
+
+</html>
